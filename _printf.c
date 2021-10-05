@@ -9,7 +9,6 @@
   */
 int _printf(const char *format, ...)
 {
-        char buffer[1024];
         int printed_chars;
 	conver_t f_list[] = {
 		{"c", print_char},
@@ -18,11 +17,6 @@ int _printf(const char *format, ...)
 		{"d", print_integer},
 		{"i", print_integer},
 		{"b", print_binary},
-		{"u", format_u},
-		{"o", format_o},
-		{"x", format_x},
-		{"X", format_X},
-		{"r", format_r},
 		{NULL, NULL}
 	};
 	va_list arg_list;
