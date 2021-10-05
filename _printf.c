@@ -9,7 +9,6 @@
   */
 int _printf(const char *format, ...)
 {
-        char buffer[1024];
 	int printed_chars;
 	conver_t f_list[] = {
 		{"c", print_char},
