@@ -38,6 +38,7 @@ int print_heX(va_list list);
 void format_u(va_list valist, char *buffer, int *index);
 void format_o(va_list valist, char *buffer, int *index);
 void rev_string(char *s);
+void format_r(va_list valist, char *buffer, int *index);
 /*extra functions*/
 unsigned int base_len(unsigned int, int);
 char *rev_string(char *);
